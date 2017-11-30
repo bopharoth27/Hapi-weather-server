@@ -1,7 +1,7 @@
 'use strict';
 const Weather = require('../modules/weather')
 const Hapi = require('hapi');
-const server = new Hapi.Server({host : 'localhost', port :3000});
+const server = new Hapi.Server({host : 'immense-dusk-79357.herokuapp.com/', port :8080});
 
 server.start()
    .then( () => { console.log(`Listening on ${server.info.uri}`)})
